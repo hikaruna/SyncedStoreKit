@@ -10,6 +10,7 @@
 		1781284920BC58A800377C4F /* SyncedStoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1781283F20BC58A800377C4F /* SyncedStoreKit.framework */; };
 		1781284E20BC58A800377C4F /* SyncedStoreKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1781284D20BC58A800377C4F /* SyncedStoreKitTests.swift */; };
 		1781285020BC58A800377C4F /* SyncedStoreKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1781284220BC58A800377C4F /* SyncedStoreKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1781285A20BC5A0700377C4F /* SyncedStoreKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1781285920BC5A0700377C4F /* SyncedStoreKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		1781284820BC58A800377C4F /* SyncedStoreKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SyncedStoreKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1781284D20BC58A800377C4F /* SyncedStoreKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncedStoreKitTests.swift; sourceTree = "<group>"; };
 		1781284F20BC58A800377C4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1781285920BC5A0700377C4F /* SyncedStoreKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncedStoreKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				1781284220BC58A800377C4F /* SyncedStoreKit.h */,
 				1781284320BC58A800377C4F /* Info.plist */,
+				1781285920BC5A0700377C4F /* SyncedStoreKit.swift */,
 			);
 			path = SyncedStoreKit;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					1781283E20BC58A800377C4F = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					1781284720BC58A800377C4F = {
 						CreatedOnToolsVersion = 9.3;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1781285A20BC5A0700377C4F /* SyncedStoreKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,7 @@
 		1781285420BC58A800377C4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -355,6 +361,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.hikaruna.SyncedStoreKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -363,6 +370,7 @@
 		1781285520BC58A800377C4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -387,6 +395,7 @@
 		1781285720BC58A800377C4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SyncedStoreKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +413,7 @@
 		1781285820BC58A800377C4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SyncedStoreKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
